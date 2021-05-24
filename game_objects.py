@@ -49,4 +49,3 @@ class Grid:
             for y in range(height):
                 is_bomb = random() > 0.5
                 cells[x].append(Cell(x, y, is_bomb))
-                
