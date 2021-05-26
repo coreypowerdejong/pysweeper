@@ -1,0 +1,30 @@
+minesweeper terminal game
+
+print grid of characters representing cells
+top and left edge has index markings in hexadecimal
+take input in the form:
+    AB => row A column B 
+
+evaluate cell based on minesweeper rules
+
+
+cell class
+    uncovered attribute
+    flagged attribute
+    when uncovered, if empty, recursively check neighbours
+        if neighbour is empty, uncover, recurse 
+        if number cell, stop recursion
+
+bomb class
+    inherit from cell
+    if uncovered, end game
+
+grid class 
+    contains 2D array of cells
+    method to generate new grid
+    method to pretty print grid
+
+game class 
+    contains grid attribute
+    method to receive + interpret user input
+    
